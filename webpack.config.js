@@ -35,7 +35,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [
-              '@babel/stage-0',
+              ['@babel/stage-0', { decoratorsLegacy: true }],
               '@babel/stage-3',
             ],
             plugins: [
